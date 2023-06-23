@@ -1,0 +1,6 @@
+[submodule "packages/calculator"]
+	path = packages/calculator
+	url = https://github.com/ClydeFrog04/calculator/
+[submodule "packages/portfolio"]
+	path = packages/portfolio
+	url = https://github.com/ClydeFrog04/portfolio/
