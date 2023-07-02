@@ -43,3 +43,8 @@ Now that we have our project cloned, we are ready to run the project!
 - Build command is `pnpm run build`
 - Output directory is `packages/portfolio/dist` *note that we probably could add a cp to the build command that creates a dist dir at the project root but i wasn't feeling like experimenting at the time of writing :]
 - Install command(if applicable, netlify will detect a pnpm-lock.yaml and use pnpm by default, other services may not do this, did not test with vercel) `pnpm install`
+
+
+
+### Miscellaneous Notes
+- In order for refresh to work in production on different routes, a `_redirects` file must exist in the dist folder with an entry of `/*  /index.html  200`

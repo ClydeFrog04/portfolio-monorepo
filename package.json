@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "main": "pnpm --prefix packages/portfolio/ run dev",
+    "serve": "pnpm --prefix packages/portfolio/ run serve",
     "build": "pnpm --prefix packages/portfolio/ run build"
   },
   "keywords": [],
