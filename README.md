@@ -36,3 +36,10 @@ Now that we have our project cloned, we are ready to run the project!
 - - If your terminal does not support user input when running vite cli, you can manually navigate to the url displayed in the terminal!
 
 ## Congrats this project should be able to be opened in a browser now!
+
+
+## Deploying a pnpm monorepo to services like vercel/netlify
+- We have to override the default build and deploy setting since this is *NOT* just a simple react/vite app :]
+- Build command is `pnpm run build`
+- Output directory is `packages/portfolio/dist` *note that we probably could add a cp to the build command that creates a dist dir at the project root but i wasn't feeling like experimenting at the time of writing :]
+- Install command(if applicable, netlify will detect a pnpm-lock.yaml and use pnpm by default, other services may not do this, did not test with vercel) `pnpm install`
