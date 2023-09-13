@@ -23,9 +23,6 @@ importers:
 
   packages/SpotifyWeb:
     dependencies:
-      '@portfolio-monorepo/SpotifyWeb':
-        specifier: workspace:^
-        version: 'link:'
       '@spotify/web-api-ts-sdk':
         specifier: ^1.1.2
         version: 1.1.2
@@ -133,6 +130,9 @@ importers:
       '@portfolio-monorepo/calculator':
         specifier: workspace:^
         version: link:../calculator
+      '@spotify/web-api-ts-sdk':
+        specifier: ^1.1.2
+        version: 1.1.2
       '@vitejs/plugin-react':
         specifier: ^4.0.2
         version: 4.0.2(vite@4.4.2)
