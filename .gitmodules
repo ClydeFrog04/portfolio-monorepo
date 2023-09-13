@@ -4,3 +4,6 @@
 [submodule "packages/portfolio"]
 	path = packages/portfolio
 	url = https://github.com/ClydeFrog04/portfolio/
+[submodule "packages/SpotifyWeb"]
+	path = packages/SpotifyWeb
+	url = https://github.com/ClydeFrog04/SpotifyWeb
