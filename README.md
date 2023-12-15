@@ -6,10 +6,11 @@ All other packages are applications i want to share with the world! This set up 
 git repo in it which makes updates easy!!
 
 ## To import components between projects
-- the host app should export the component or function you'd like to share
+- the host app(the project being added) should export the component or function you'd like to share
 - the host app should have a name entry in it's package json with a value like `@portfolio-monorepo/APPLICAITON_NAME` 
-- within the remote or client application, run `pnpm add @portfolio-monorepo/APPLICAITON_NAME`
+- within the remote or client application(the app that is going to consume the exported component), run `pnpm add @portfolio-monorepo/APPLICAITON_NAME`
 
+- *IF THE PROJECT BEING ADDED USES A STATE CONTEXT REMEMBER TO ADD IT TO THE CLIENT ROOT PROVIDER OR THE APP WILL NOT FUNCTION CORRECTLY*
 
 ## To add submodules
 - more info can be found here https://itecnote.com/tecnote/git-issue-with-adding-common-code-as-git-submodule-already-exists-in-the-index/
