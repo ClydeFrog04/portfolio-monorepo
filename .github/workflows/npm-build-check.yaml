@@ -17,7 +17,7 @@ jobs:
         run: npm install && npm install -g pnpm && cd packages/portfolio && npm install
 
       - name: Build project
-        run: pwd && cd packages/portfolio && npm run build && cd ../../ && npm run build
+        run: pwd && ls && cd packages/portfolio && npm run build && cd ../../ && npm run build
 
       - name: Check build status
         run: |
